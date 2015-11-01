@@ -1,0 +1,6 @@
+app/Core/Config.php
+.DS_Store
+/.idea
+/vendor
+/config/Config.php
+/composer.lock

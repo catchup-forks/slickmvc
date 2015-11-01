@@ -1,0 +1,18 @@
+{
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyApp\\Config\\":      "config",
+      "MyApp\\Core\\":        "framework/core",
+      "MyApp\\Controllers\\": "app/controllers",
+      "MyApp\\Models\\":      "app/models",
+      "MyApp\\Modules\\":     "app/modules",
+      "MyApp\\Library\\":     "framework/library",
+      "MyApp\\Framework\\":   "framework/library/dk",
+    }
+  },
+  "minimum-stability": "dev"
+}
+
