@@ -150,7 +150,7 @@ class Paginator
      *                     ->skip($offset)->take($rowsPerPage)->get();
      * }
      *
-     * Also see the file in the helpers folder page_eloq.md for more help.
+     * Also see the file in the library folder page_eloq.md for more help.
      *
      * @var numeric
      */

@@ -15,6 +15,10 @@ use MyApp\Library\Hooks;
 Router::any('', 'MyApp\Controllers\Welcome@index');
 Router::any('subpage', 'MyApp\Controllers\Welcome@subPage');
 
+Router::any('tickets', 'MyApp\Controllers\Tickets@index');
+Router::any('tickets/browse', 'MyApp\Controllers\Tickets@browse');
+
+
 /** Module routes. */
 $hooks = Hooks::get();
 $hooks->run('routes');

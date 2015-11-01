@@ -22,7 +22,7 @@ use MyApp\Library\Database;
  *
  * Example of usage:
  *
- * // After namespace: use \helpers\tableBuilder;
+ * // After namespace: use \library\tableBuilder;
  *
  * // Model or Controller method
  * $tableBuilder = new tableBuilder;
@@ -51,7 +51,7 @@ class TableBuilder
     const CURRENT_TIMESTAMP = 2;
 
     /**
-     * @var \helpers\database A database instance
+     * @var \library\database A database instance
      */
     protected $db;
 

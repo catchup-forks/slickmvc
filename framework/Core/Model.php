@@ -22,7 +22,7 @@ abstract class Model
      *
      * @var object
      */
-    protected $db;
+    protected $_db;
 
     /**
      * Create a new instance of the database helper.
@@ -30,6 +30,6 @@ abstract class Model
     public function __construct()
     {
         /** connect to PDO here. */
-        $this->db = Database::get();
+        $this->_db = Database::get();
     }
 }

@@ -61,7 +61,7 @@ class Error extends Controller
     public static function display($error, $class = 'alert alert-danger')
     {
       $data['title'] = '404';
-      $data['error'] = $this->error;
+      $data['error'] = $error;
       $return = "";
       $return .= View::renderTemplate('header', $data);
         if (is_array($error)) {

@@ -12,14 +12,14 @@ return array(
 	',
 
   // Subpage method
-  'browse_text'    => 'Browse tickets',
-  'browse_message' => '
-		Hello, tickets from the tickets controller and browse method! <br/>
+  'subpage_text'    => 'Subpage',
+  'subpage_message' => '
+		Hello, tickets from the tickets controller and subpage method! <br/>
 		This content can be changed in <code>/path/to/views/tickets/subpage.php</code>
 	',
 
   // Buttons
-  'browse_tickets'    => 'Browse tickets',
+  'open_subpage'    => 'Open subpage',
   'back_home'       => 'Home',
 
 );

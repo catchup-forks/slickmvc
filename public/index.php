@@ -5,8 +5,10 @@
  */
 $smvc = '.';
 
+define('DIRSEP', '/');
 /** Set the full path to the docroot */
-define('ROOT', realpath(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR);
+$rootpath = str_replace("\\", "/", realpath(dirname(dirname(__FILE__))));
+define('ROOT', $rootpath.DIRSEP);
 
 /** Make the application relative to the docroot, for symlink'd index.php */
 if (!is_dir($smvc) and is_dir(ROOT.$smvc)) {
@@ -14,7 +16,8 @@ if (!is_dir($smvc) and is_dir(ROOT.$smvc)) {
 }
 
 /** Define the absolute paths for configured directories */
-define('SMVC', realpath(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR);
+$smvcpath = str_replace("\\", "/", realpath(dirname(dirname(__FILE__))));
+define('SMVC', $smvcpath.DIRSEP);
 
 /** Unset non used variables */
 unset($smvc);
